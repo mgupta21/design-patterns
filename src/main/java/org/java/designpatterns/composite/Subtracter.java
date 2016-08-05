@@ -3,9 +3,9 @@ package org.java.designpatterns.composite;
 /**
  * Created by mgupta on 8/3/16.
  */
-public class Subtract extends BinaryExpression {
+public class Subtracter extends BinaryExpression {
 
-    public Subtract(Expression left, Expression right) {
+    public Subtracter(Expression left, Expression right) {
         super(left, right);
     }
 

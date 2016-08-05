@@ -3,9 +3,9 @@ package org.java.designpatterns.composite;
 /**
  * Created by mgupta on 8/4/16.
  */
-public class Multiply extends BinaryExpression {
+public class Multiplier extends BinaryExpression {
 
-    public Multiply(Expression left, Expression right) {
+    public Multiplier(Expression left, Expression right) {
         super(left, right);
     }
 

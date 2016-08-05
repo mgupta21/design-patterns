@@ -3,9 +3,9 @@ package org.java.designpatterns.composite;
 /**
  * Created by mgupta on 8/3/16.
  */
-public class Add extends BinaryExpression {
+public class Adder extends BinaryExpression {
 
-    public Add(Expression left, Expression right) {
+    public Adder(Expression left, Expression right) {
         super(left, right);
     }
 
