@@ -3,18 +3,14 @@ package org.java.designpatterns.composite;
 /**
  * Created by mgupta on 8/3/16.
  */
-public class Add implements Expression {
+public class Add extends BinaryExpression {
 
-    private final double valueB;
-    private final double valueA;
-
-    public Add(double a, double b) {
-        this.valueA = a;
-        this.valueB = b;
+    public Add(Expression left, Expression right) {
+        super(left, right);
     }
 
     @Override
     public double getValue() {
-        return valueA + valueB;
+        return left.getValue() + right.getValue();
     }
 }

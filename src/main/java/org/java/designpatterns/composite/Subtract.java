@@ -3,17 +3,14 @@ package org.java.designpatterns.composite;
 /**
  * Created by mgupta on 8/3/16.
  */
-public class Subtract implements Expression {
-    private final double valueA;
-    private final double valueB;
+public class Subtract extends BinaryExpression {
 
-    public Subtract(double a, double b) {
-        this.valueA = a;
-        this.valueB = b;
+    public Subtract(Expression left, Expression right) {
+        super(left, right);
     }
 
     @Override
     public double getValue() {
-        return valueA - valueB;
+        return left.getValue() - right.getValue();
     }
 }

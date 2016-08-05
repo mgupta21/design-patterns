@@ -8,26 +8,47 @@ import org.junit.Test;
  */
 public class CompositePatternTest {
 
+    private static final double TEST_VALUE_A = 4.0;
+    private static final double TEST_VALUE_B = 2.0;
+
     @Test
     public void testExpression() throws Exception {
-        double testValue = 2.0;
-        Expression e = new Constant(testValue);
-        Assert.assertEquals(testValue, e.getValue(), 0.0);
+        Expression e = getConstant(TEST_VALUE_A);
+        Assert.assertEquals(TEST_VALUE_A, e.getValue(), 0.0);
     }
 
     @Test
     public void testAdder() throws Exception {
-        double testValueA = 2.0;
-        double testValueB = 4.0;
-        Expression e = new Add(testValueA, testValueB);
-        Assert.assertEquals((testValueA + testValueB), e.getValue(), 0.0);
+        Expression e = getAddExpression(TEST_VALUE_A, TEST_VALUE_B);
+        Assert.assertEquals((TEST_VALUE_B + TEST_VALUE_A), e.getValue(), 0.0);
     }
 
     @Test
     public void testSubtract() throws Exception {
-        double testValueA = 4.0;
-        double testValueB = 2.0;
-        Expression e = new Subtract(testValueA, testValueB);
-        Assert.assertEquals((testValueA - testValueB), e.getValue(), 0.0);
+        Expression e = getSubtractExpression(TEST_VALUE_A, TEST_VALUE_B);
+        Assert.assertEquals((TEST_VALUE_A - TEST_VALUE_B), e.getValue(), 0.0);
     }
+
+    @Test
+    public void testMultiply() throws Exception {
+        Expression e = getMultiplyExpression(TEST_VALUE_A, TEST_VALUE_B);
+        Assert.assertEquals((TEST_VALUE_A * TEST_VALUE_B), e.getValue(), 0.0);
+    }
+
+    private Expression getMultiplyExpression(double leftValue, double rightValue) {
+        return new Multiply(getConstant(leftValue), getConstant(rightValue));
+    }
+
+    private Expression getSubtractExpression(double leftValue, double rightValue) {
+        return new Subtract(getConstant(leftValue), getConstant(rightValue));
+    }
+
+    private Expression getAddExpression(double leftValue, double rightValue) {
+        return new Add(getConstant(leftValue), getConstant(rightValue));
+    }
+
+    private Constant getConstant(double leftValue) {
+        return new Constant(leftValue);
+    }
+
 }
