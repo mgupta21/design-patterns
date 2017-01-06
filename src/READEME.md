@@ -3,6 +3,7 @@
 # Behavioural Pattern
 
 ***Composite Design Pattern***
+>> Purpose: Define the key internal data structure for the expression tree
 >> Organization of objects as trees
 
 ***Proxy Design Pattern***
@@ -16,15 +17,28 @@
         >> security (eg. credentials check)
         >> audit trail
         
+***Visitor Pattern***
+>> Purpose: Perform an extensible set of operations on an expression tree without requiring any changes to the tree itself
+>> Visitor decouples expression tree structure from operations performed on it
+>> Adding new operations to an expression tree should require no changes to the structure and implementation of the tree itself
+>> Operations: a. Print all values of nodes in tree b. Conduct semantic analysis of tree c. Evaluate "yield" of nodes in tree
+>> Step 1: Create hierarchy of visitors to perform on each type of expression tree node
+        
 ***Adapter Design Pattern***
 >> Allows to add new better functionality without changing the client interface
 
 ***Decorator Design Pattern***
 >> Allows features to be added dynamically at runtime
 
-***Facade Design Pattern
+***Facade Design Pattern***
 >> Easier for the client
 >> Easier to refactor implementation
+
+***Observer Pattern***
+>> Problem: clients / dependents needs to know when the temperature changes
+>> 1. Introduce an interface that all dependents must implement - Observer
+>> 2. Implement some kind of registry that allows the thermometer to keep track of the observers
+>> 3. Implement the registration behavior in a reusable class that can be reapplied for other classes wih dependents - Observable
 
 # Creational Design Pattern
 
