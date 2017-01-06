@@ -6,7 +6,7 @@ package org.java.designpatterns.observer;
 public class ThermometerObserverClient implements Observer {
 
     public static void main(String[] args) {
-        Experiment ex = new Experiment();
+        Setup ex = new Setup();
         ThermometerObserverClient client = new ThermometerObserverClient();
         ex.getThermometer().addObserver(client);
         try {

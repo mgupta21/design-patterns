@@ -9,7 +9,7 @@ public class ThermometerPollingClient {
     private static final long MS_BETWEEN_POLLS = 50;
 
     public static void main(String[] args) {
-        Experiment ex = new Experiment();
+        Setup ex = new Setup();
         Thermometer t = ex.getThermometer();
         long count = SEC_TO_RUN * 1000 / MS_BETWEEN_POLLS;
 
