@@ -40,6 +40,9 @@
 >> 2. Implement some kind of registry that allows the thermometer to keep track of the observers
 >> 3. Implement the registration behavior in a reusable class that can be reapplied for other classes wih dependents - Observable
 
+***Template Pattern***
+>> Template method is often used in the context of building frameworks
+
 # Creational Design Pattern
 
 ****Abstract Fatory***
