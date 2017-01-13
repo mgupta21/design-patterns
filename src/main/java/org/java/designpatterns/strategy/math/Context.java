@@ -1,4 +1,4 @@
-package org.java.designpatterns.strategy;
+package org.java.designpatterns.strategy.math;
 
 /**
  * Created by mgupta on 9/9/16.
