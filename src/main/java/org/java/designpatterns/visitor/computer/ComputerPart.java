@@ -5,6 +5,7 @@ package org.java.designpatterns.visitor.computer;
  */
 public interface ComputerPart {
 
+    // Element object accepts the visitor
     void accept(ComputerPartVisitor computerPartVisitor);
 
 }
