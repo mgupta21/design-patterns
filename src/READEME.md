@@ -18,6 +18,9 @@
         >> audit trail
         
 ***Visitor Pattern***
+>> In visitor pattern, visitor class changes the execution of an element class. So, execution of element can vary as visitor varies.
+>> The element object accepts the visitor object which handles the operation on the element object.
+
 >> Purpose: Perform an extensible set of operations on an expression tree without requiring any changes to the tree itself
 >> Visitor decouples expression tree structure from operations performed on it
 >> Adding new operations to an expression tree should require no changes to the structure and implementation of the tree itself
