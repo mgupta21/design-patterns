@@ -1,4 +1,4 @@
-package org.java.designpatterns.decorator;
+package org.java.designpatterns.decorator.graphics;
 
 import java.util.LinkedList;
 import java.util.List;

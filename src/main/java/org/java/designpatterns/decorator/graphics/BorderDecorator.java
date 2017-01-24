@@ -1,4 +1,4 @@
-package org.java.designpatterns.decorator;
+package org.java.designpatterns.decorator.graphics;
 
 /**
  * Created by mgupta on 8/7/16.
