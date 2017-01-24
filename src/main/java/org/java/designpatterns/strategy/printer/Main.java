@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Random r = new Random();
         System.out.println("Starting Experiment");
-        User u[] = {new User("Petter"), new User("John"), new User("Sue")};
+        User u[] = {new User("Peter"), new User("John"), new User("Sue")};
         Printer p = new Printer();
         p.start();
         for (int i = 0; i < NUMBER_OF_JOBS; i++) {

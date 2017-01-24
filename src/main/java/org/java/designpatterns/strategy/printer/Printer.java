@@ -22,7 +22,7 @@ public class Printer extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Job j = null;
+            Job j;
             synchronized (this) {
                 j = this.getNextJob();
             }
