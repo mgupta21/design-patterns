@@ -1,5 +1,3 @@
-# Structural Pattern
-
 # Behavioural Pattern
 
 ***Composite Design Pattern***
@@ -54,6 +52,7 @@
 ****Abstract Fatory***
 
 ***Builder****
+>> Builds complex object using simple objects.
 
 ***Prototype***
 
